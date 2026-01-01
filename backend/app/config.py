@@ -20,6 +20,10 @@ class Settings(BaseSettings):
     SETTLEMENT_CONTRACT_ADDRESS: Optional[str] = None
     PRIVATE_KEY: Optional[str] = None
 
+    # Supabase settings
+    SUPABASE_URL: Optional[str] = None
+    SUPABASE_KEY: Optional[str] = None
+
     class Config:
         case_sensitive = True
         # Look for .env file in the backend root directory

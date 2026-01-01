@@ -1,21 +1,14 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from app.db.session import SessionLocal
 from app.schemas.expense import ExpenseCreate, ExpenseResponse
 from app.models.expense import Expense, ExpenseSplit
 from app.services.reconciliation import reconcile_expense
+from app.api.deps import get_current_user, get_db
 
 router = APIRouter()
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
 @router.post("/", response_model=ExpenseResponse)
-def create_new_expense(expense_in: ExpenseCreate, db: Session = Depends(get_db)):
+def create_new_expense(expense_in: ExpenseCreate, db: Session = Depends(get_db), current_user = Depends(get_current_user)):
     # Create Expense
     expense = Expense(
         group_id=expense_in.group_id,
