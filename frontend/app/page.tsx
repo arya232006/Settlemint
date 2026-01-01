@@ -102,10 +102,10 @@ export default function Home() {
               ) : (
                 <div className="text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards">
                   <div className="space-y-4">
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
                       Settlemint
                     </h1>
-                    <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                       The next generation of expense sharing. <br/>
                       <span className="text-gray-500">Powered by Blockchain Settlement.</span>
                     </p>
@@ -114,7 +114,7 @@ export default function Home() {
                   <div className="pt-8 flex flex-col items-center gap-12">
                     <button 
                       onClick={() => setShowLogin(true)}
-                      className="group bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
+                      className="group bg-white text-black px-6 py-3 rounded-full font-bold text-base hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
                     >
                       Get Started
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -133,7 +133,7 @@ export default function Home() {
             {!showLogin && (
               <>
               <section className="min-h-screen flex flex-col items-center justify-center p-4 md:p-20 bg-gradient-to-b from-transparent to-zinc-900/50">
-                <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                <h2 className="text-2xl md:text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                   Why Settlemint?
                 </h2>
                 
@@ -157,15 +157,15 @@ export default function Home() {
                   ].map((feature, i) => (
                     <div 
                       key={i}
-                      className="group p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)]"
+                      className="group p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)]"
                     >
                       <div className="bg-white/5 w-12 h-12 flex items-center justify-center rounded-xl mb-6 group-hover:scale-110 group-hover:bg-white/10 transition-all duration-300 border border-white/5">
                         {feature.icon}
                       </div>
-                      <h3 className="text-xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all">
+                      <h3 className="text-lg font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                      <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
                         {feature.desc}
                       </p>
                     </div>
@@ -176,7 +176,7 @@ export default function Home() {
               {/* How it Works Section */}
               <section className="py-32 px-4 border-t border-white/5 bg-black/20 backdrop-blur-sm">
                 <div className="max-w-6xl mx-auto">
-                  <h2 className="text-4xl md:text-5xl font-bold mb-20 text-center">
+                  <h2 className="text-2xl md:text-4xl font-bold mb-20 text-center">
                     <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
                       Settlement in 3 Steps
                     </span>
@@ -205,10 +205,10 @@ export default function Home() {
                     ].map((item, i) => (
                       <div key={i} className="relative flex flex-col items-center text-center group">
                         <div className="w-24 h-24 rounded-full bg-black border border-white/10 flex items-center justify-center mb-8 z-10 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_30px_-10px_rgba(255,255,255,0.2)]">
-                          <span className="text-3xl font-bold text-white">{item.step}</span>
+                          <span className="text-2xl font-bold text-white">{item.step}</span>
                         </div>
-                        <h3 className="text-2xl font-bold mb-4 text-white">{item.title}</h3>
-                        <p className="text-gray-400 leading-relaxed max-w-xs">
+                        <h3 className="text-xl font-bold mb-4 text-white">{item.title}</h3>
+                        <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
                           {item.desc}
                         </p>
                       </div>
