@@ -102,10 +102,10 @@ export default function Home() {
               ) : (
                 <div className="text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards">
                   <div className="space-y-4">
-                    <h1 className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
                       Settlemint
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                       The next generation of expense sharing. <br/>
                       <span className="text-gray-500">Powered by Blockchain Settlement.</span>
                     </p>
@@ -133,7 +133,7 @@ export default function Home() {
             {!showLogin && (
               <>
               <section className="min-h-screen flex flex-col items-center justify-center p-4 md:p-20 bg-gradient-to-b from-transparent to-zinc-900/50">
-                <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                   Why Settlemint?
                 </h2>
                 
