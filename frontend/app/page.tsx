@@ -41,7 +41,14 @@ export default function Home() {
   }
 
   return (
-    <main className="relative min-h-screen bg-black text-white selection:bg-green-500/30">
+    <main className="relative min-h-screen bg-black text-white selection:bg-green-500/30 overflow-hidden">
+      {/* Ambient Background Glow */}
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none z-0 animate-float" />
+      <div className="fixed bottom-0 right-0 w-[800px] h-[600px] bg-purple-500/10 blur-[120px] rounded-full pointer-events-none z-0 animate-float-delayed" />
+      
+      {/* Grid Pattern Overlay */}
+      <div className="fixed inset-0 bg-grid-white/[0.02] z-0 pointer-events-none" />
+
       <Particles
         particleCount={200}
         particleColor="#ffffff"
@@ -102,7 +109,7 @@ export default function Home() {
               ) : (
                 <div className="text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards">
                   <div className="space-y-4">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 animate-text-shimmer tracking-tighter drop-shadow-sm">
                       Settlemint
                     </h1>
                     <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
@@ -114,10 +121,13 @@ export default function Home() {
                   <div className="pt-8 flex flex-col items-center gap-12">
                     <button 
                       onClick={() => setShowLogin(true)}
-                      className="group bg-white text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
+                      className="group relative bg-white text-black px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2 overflow-hidden"
                     >
-                      Get Started
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+                      <span className="relative z-10 flex items-center gap-2">
+                        Get Started
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </span>
                     </button>
 
                     <div className="animate-bounce text-gray-500 mt-8">

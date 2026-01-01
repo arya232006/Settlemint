@@ -14,3 +14,4 @@ class Group(Base):
     name = Column(String, index=True)
     
     members = relationship("User", secondary=group_members, backref="groups")
+    expenses = relationship("Expense", back_populates="group")

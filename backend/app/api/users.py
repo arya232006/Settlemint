@@ -19,7 +19,8 @@ def create_user(user_in: UserCreate, db: Session = Depends(get_db), supabase_use
     user = User(
         name=user_in.name, 
         wallet_address=user_in.wallet_address,
-        supabase_id=supabase_user.id
+        supabase_id=supabase_user.id,
+        email=supabase_user.email
     )
     db.add(user)
     db.commit()

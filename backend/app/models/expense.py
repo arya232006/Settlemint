@@ -9,7 +9,7 @@ class Expense(Base):
     amount = Column(Numeric(10, 2), nullable=False)
     
     paid_by = relationship("User", foreign_keys=[paid_by_id])
-    group = relationship("Group")
+    group = relationship("Group", back_populates="expenses")
     splits = relationship("ExpenseSplit", back_populates="expense")
 
 class ExpenseSplit(Base):
