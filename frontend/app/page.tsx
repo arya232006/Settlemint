@@ -6,7 +6,7 @@ import Auth from '@/components/Auth'
 import Dashboard from '@/components/Dashboard'
 import Particles from '@/components/Particles'
 import { User } from '@supabase/supabase-js'
-import { Zap, Shield, Scale, ChevronDown, ArrowRight, Github, Twitter } from 'lucide-react'
+import { Zap, Shield, Scale, ChevronDown, ArrowRight, Github, Twitter, Quote } from 'lucide-react'
 
 export default function Home() {
   const [user, setUser] = useState<User | null>(null)
@@ -214,6 +214,65 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
+                </div>
+              </section>
+
+              {/* Testimonials Section */}
+              <section className="py-32 px-4 relative overflow-hidden">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] -z-10" />
+                <div className="max-w-6xl mx-auto">
+                  <h2 className="text-2xl md:text-4xl font-bold mb-16 text-center text-white">
+                    Trusted by early adopters
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {[
+                      {
+                        quote: "Finally, an expense tracker that doesn't feel like a spreadsheet. The blockchain settlement is magic.",
+                        author: "Alex Chen",
+                        role: "Crypto Enthusiast"
+                      },
+                      {
+                        quote: "Settlemint made our group trip to Japan completely stress-free. We knew exactly who owed what.",
+                        author: "Sarah Miller",
+                        role: "Travel Blogger"
+                      },
+                      {
+                        quote: "The transparency is unmatched. I love being able to verify every transaction on the ledger.",
+                        author: "David Park",
+                        role: "Software Engineer"
+                      }
+                    ].map((testimonial, i) => (
+                      <div key={i} className="p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm relative group hover:bg-white/10 transition-colors">
+                        <Quote className="w-8 h-8 text-gray-600 mb-6 group-hover:text-white transition-colors" />
+                        <p className="text-gray-300 mb-6 leading-relaxed">"{testimonial.quote}"</p>
+                        <div>
+                          <p className="font-bold text-white">{testimonial.author}</p>
+                          <p className="text-sm text-gray-500">{testimonial.role}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
+
+              {/* CTA Section */}
+              <section className="py-32 px-4 text-center relative">
+                <div className="max-w-3xl mx-auto space-y-8">
+                  <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white">
+                    Ready to settle up?
+                  </h2>
+                  <p className="text-gray-400 text-lg max-w-xl mx-auto">
+                    Join thousands of users who are experiencing the future of expense sharing today.
+                  </p>
+                  <button 
+                    onClick={() => {
+                      setShowLogin(true)
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }}
+                    className="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]"
+                  >
+                    Start for Free
+                  </button>
                 </div>
               </section>
 
