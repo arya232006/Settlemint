@@ -43,10 +43,10 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-black text-white selection:bg-green-500/30">
       <Particles
-        particleCount={300}
+        particleCount={200}
         particleColor="#ffffff"
-        minSize={2}
-        maxSize={3}
+        minSize={0.6}
+        maxSize={1.4}
         className="fixed inset-0 z-0 pointer-events-none"
       />
       
@@ -102,10 +102,10 @@ export default function Home() {
               ) : (
                 <div className="text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards">
                   <div className="space-y-4">
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500 tracking-tighter drop-shadow-sm">
                       Settlemint
                     </h1>
-                    <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                       The next generation of expense sharing. <br/>
                       <span className="text-gray-500">Powered by Blockchain Settlement.</span>
                     </p>
@@ -114,10 +114,10 @@ export default function Home() {
                   <div className="pt-8 flex flex-col items-center gap-12">
                     <button 
                       onClick={() => setShowLogin(true)}
-                      className="group bg-white text-black px-6 py-3 rounded-full font-bold text-base hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
+                      className="group bg-white text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
                     >
                       Get Started
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
 
                     <div className="animate-bounce text-gray-500 mt-8">
