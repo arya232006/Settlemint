@@ -18,24 +18,52 @@ export default function Dashboard({ user }: { user: User }) {
   const [newGroupName, setNewGroupName] = useState('')
   const [userName, setUserName] = useState('')
   const [selectedGroupId, setSelectedGroupId] = useState<number | null>(null)
+  const [walletAddress, setWalletAddress] = useState<string | null>(null)
 
   useEffect(() => {
-    loadGroups()
+    loadData()
   }, [])
 
-  const loadGroups = async () => {
+  const loadData = async () => {
     try {
-      const data = await fetchApi('/groups/')
-      setGroups(data)
+      const [groupsData, userData] = await Promise.all([
+        fetchApi('/groups/'),
+        fetchApi('/users/me').catch(() => null)
+      ])
+      
+      setGroups(groupsData)
+      if (userData?.wallet_address) {
+        setWalletAddress(userData.wallet_address)
+      }
       setNeedsRegistration(false)
     } catch (error: any) {
-      if (error.message.includes('User not found')) {
+      if (error.message.includes('User not found') || error.message.includes('404')) {
         setNeedsRegistration(true)
       } else {
-        console.error('Failed to load groups:', error)
+        console.error('Failed to load data:', error)
       }
     } finally {
       setLoading(false)
+    }
+  }
+
+  const connectWallet = async () => {
+    if (typeof window.ethereum !== 'undefined') {
+      try {
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        const address = accounts[0]
+        setWalletAddress(address)
+        
+        await fetchApi('/users/me', {
+          method: 'PUT',
+          body: JSON.stringify({ wallet_address: address })
+        })
+      } catch (error) {
+        console.error(error)
+        alert('Failed to connect wallet')
+      }
+    } else {
+      alert('Please install MetaMask!')
     }
   }
 
@@ -48,7 +76,7 @@ export default function Dashboard({ user }: { user: User }) {
           wallet_address: null
         })
       })
-      loadGroups()
+      loadData()
     } catch (error) {
       alert('Failed to register')
     }
@@ -65,7 +93,7 @@ export default function Dashboard({ user }: { user: User }) {
         })
       })
       setNewGroupName('')
-      loadGroups()
+      loadData()
     } catch (error) {
       alert('Failed to create group')
     }
@@ -114,6 +142,20 @@ export default function Dashboard({ user }: { user: User }) {
           <h1 className="text-4xl font-bold text-white mb-2">Dashboard</h1>
           <p className="text-gray-400">Welcome back, {user.email?.split('@')[0]}</p>
         </div>
+        <button
+          onClick={connectWallet}
+          className={`px-6 py-3 rounded-full font-bold transition-all flex items-center gap-2 ${
+            walletAddress 
+              ? 'bg-green-500/20 text-green-400 border border-green-500/50' 
+              : 'bg-white text-black hover:bg-gray-200 hover:scale-105'
+          }`}
+        >
+          <Wallet className="w-5 h-5" />
+          {walletAddress 
+            ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
+            : 'Connect Wallet'
+          }
+        </button>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

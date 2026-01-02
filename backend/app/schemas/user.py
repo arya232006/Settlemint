@@ -5,6 +5,9 @@ class UserCreate(BaseModel):
     name: str
     wallet_address: Optional[str] = None
 
+class UserUpdate(BaseModel):
+    wallet_address: Optional[str] = None
+
 class UserResponse(BaseModel):
     id: int
     name: str
