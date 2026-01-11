@@ -13,12 +13,12 @@
 
 ## 🛠️ Tech Stack
 
-### Frontend
+## Frontend
 *   **Framework**: Next.js 14 (React)
 *   **Styling**: Tailwind CSS + Lucide Icons
 *   **State/Auth**: Supabase Client
 
-### Backend
+## Backend
 *   **Framework**: FastAPI (Python 3.10+)
 *   **Database**: PostgreSQL (Supabase)
 *   **Queue**: Redis (Upstash) + Celery
