@@ -1,0 +1,13 @@
+{
+  "id": "4a7b45fbd9f5",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "README.md",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/4a7b45fbd9f5/blobs/e73113011ed845fdb71e55f99c1d16dc-README.md",
+      "after_preview": "# Settlemint \ud83d\udcb8\n\n**Settlemint** is a modern, auto\u2011reconciled expense\u2011sharing system with blockchain\u2011backed settlement proofs. Think \"Splitwise on Steroids\" \u2014 bui",
+      "ts": 1778022306528
+    }
+  ]
+}
