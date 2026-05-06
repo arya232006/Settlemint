@@ -1,0 +1,13 @@
+{
+  "id": "b744a79da836",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "write",
+      "path": "xyz.md",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/b744a79da836/blobs/8401e80ebee6457ea613864a40faaec2-xyz.md",
+      "after_preview": "RED",
+      "ts": 1778048818933
+    }
+  ]
+}
