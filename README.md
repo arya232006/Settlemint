@@ -112,3 +112,5 @@ Once the backend is running, visit: `http://localhost:8000/docs`
 ```bash
 pytest backend/tests
 ```
+
+it's so cool
