@@ -1,0 +1,20 @@
+{
+  "id": "2d6c7e791d42",
+  "workspace": "C:\\Users\\ARYADEEP\\Desktop\\AGENTRIX\\packages\\relay\\workspaces\\arya232006\\Settlemint",
+  "ops": [
+    {
+      "kind": "create",
+      "path": "src/pages/terms-and-conditions.js",
+      "before_blob_path": null,
+      "after_preview": "import React from 'react';\n\nconst TermsAndConditions = () => {\n    return (\n        <div className=\"container mx-auto p-4\">\n            <h1 className=\"text-2xl ",
+      "ts": 1779775408448
+    },
+    {
+      "kind": "create",
+      "path": "src/components/Footer.js",
+      "before_blob_path": null,
+      "after_preview": "import React from 'react';\nimport { Link } from 'react-router-dom';\n\nconst Footer = () => {\n    return (\n        <footer className=\"bg-gray-800 text-white p-4\">",
+      "ts": 1779775422272
+    }
+  ]
+}

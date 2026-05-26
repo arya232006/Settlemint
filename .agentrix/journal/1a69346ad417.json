@@ -1,0 +1,20 @@
+{
+  "id": "1a69346ad417",
+  "workspace": "C:\\Users\\ARYADEEP\\Desktop\\AGENTRIX\\packages\\relay\\workspaces\\arya232006\\Settlemint",
+  "ops": [
+    {
+      "kind": "create",
+      "path": "frontend/app/terms-and-conditions.tsx",
+      "before_blob_path": null,
+      "after_preview": "import React from 'react';\n\nconst TermsAndConditions = () => {\n    return (\n        <div className=\"p-4\">\n            <h1 className=\"text-2xl font-bold\">Terms a",
+      "ts": 1779775713943
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/layout.tsx",
+      "before_blob_path": "C:\\Users\\ARYADEEP\\Desktop\\AGENTRIX\\packages\\relay\\workspaces\\arya232006\\Settlemint\\.agentrix\\journal\\1a69346ad417\\blobs\\566a649d227d4da18464dba58a6667ba-layout.tsx",
+      "after_preview": "<footer className=\"p-4\">\n          <a href=\"/terms-and-conditions\" className=\"text-blue-500\">Terms and Conditions</a>\n        </footer>\n        {children}",
+      "ts": 1779775719197
+    }
+  ]
+}
