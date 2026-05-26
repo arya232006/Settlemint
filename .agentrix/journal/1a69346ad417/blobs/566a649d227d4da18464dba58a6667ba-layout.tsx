@@ -35,10 +35,7 @@ export default function RootLayout({
       >
         {/* 🌟 Foreground */}
         <div className="relative z-10 min-h-screen">
-          <footer className="p-4">
-          <a href="/terms-and-conditions" className="text-blue-500">Terms and Conditions</a>
-        </footer>
-        {children}
+          {children}
         </div>
       </body>
     </html>
