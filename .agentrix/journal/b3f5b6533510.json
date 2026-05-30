@@ -1,0 +1,13 @@
+{
+  "id": "b3f5b6533510",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "create",
+      "path": "xyzyzy.md",
+      "before_blob_path": null,
+      "after_preview": "Agentrix",
+      "ts": 1780127233295
+    }
+  ]
+}
