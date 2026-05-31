@@ -1,0 +1,41 @@
+{
+  "id": "913204fe545e",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/913204fe545e/blobs/00d00aa0e9de4f6b97bf41cea1bef3e3-page.tsx",
+      "after_preview": "<h2 className=\"text-3xl md:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300\">",
+      "ts": 1780231813736
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/913204fe545e/blobs/4753ab4c11ca4fa7b44d1464e7d1a663-page.tsx",
+      "after_preview": "title: \"Smart Reconciliation\", \n",
+      "ts": 1780231815231
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/913204fe545e/blobs/d851e7e3aa76482691f16dd35e5b955e-page.tsx",
+      "after_preview": "title: \"Seamless Settlements\", \n",
+      "ts": 1780231819374
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/913204fe545e/blobs/c59d916561a749338d9bb0a6471da8cf-page.tsx",
+      "after_preview": "title: \"Transparent Ledger\", \n",
+      "ts": 1780231824435
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/913204fe545e/blobs/31813da5d2a043aba20eeb053baa95a1-page.tsx",
+      "after_preview": "desc: \"Every transaction is securely recorded on a transparent ledger, ensuring trust.\",",
+      "ts": 1780231825913
+    }
+  ]
+}

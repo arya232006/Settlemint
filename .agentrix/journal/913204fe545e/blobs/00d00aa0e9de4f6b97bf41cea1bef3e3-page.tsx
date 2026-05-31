@@ -143,7 +143,7 @@ export default function Home() {
             {!showLogin && (
               <>
               <section className="min-h-screen flex flex-col items-center justify-center p-4 md:p-20 bg-gradient-to-b from-transparent to-zinc-900/50">
-                <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300">
+                <h2 className="text-2xl md:text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                   Why Settlemint?
                 </h2>
                 
@@ -151,21 +151,18 @@ export default function Home() {
                   {[
                     {
                       icon: <Zap className="w-6 h-6 text-yellow-200" />,
-                      title: "Smart Reconciliation", 
-
+                      title: "Automatic Net-off",
                       desc: "Simplify debts across multiple groups instantly. Our algorithm finds the most efficient path to settle balances."
                     },
                     {
                       icon: <Scale className="w-6 h-6 text-blue-200" />,
-                      title: "Seamless Settlements", 
-
+                      title: "No Manual Settlements",
                       desc: "Forget about tracking who paid whom. Smart contracts handle the settlement logic automatically."
                     },
                     {
                       icon: <Shield className="w-6 h-6 text-green-200" />,
-                      title: "Transparent Ledger", 
-
-                      desc: "Every transaction is securely recorded on a transparent ledger, ensuring trust.",st, but verify."
+                      title: "Verifiable Ledger",
+                      desc: "Every transaction is recorded on a transparent, immutable ledger. Trust, but verify."
                     }
                   ].map((feature, i) => (
                     <div 
