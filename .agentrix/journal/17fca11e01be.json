@@ -1,0 +1,27 @@
+{
+  "id": "17fca11e01be",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/17fca11e01be/blobs/b22c2daa7b4743dcacb82c77b424dca8-page.tsx",
+      "after_preview": "title: \"Instant Settlements\",",
+      "ts": 1780232929674
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/17fca11e01be/blobs/4d9108d3593b469ebe7f1dd62f028a06-page.tsx",
+      "after_preview": "title: \"Automated Settlements\",",
+      "ts": 1780232943907
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/17fca11e01be/blobs/8d9a5ea110894551b45fbb1ed2099dbf-page.tsx",
+      "after_preview": "title: \"Transparent Transactions\",",
+      "ts": 1780232947340
+    }
+  ]
+}

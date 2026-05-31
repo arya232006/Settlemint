@@ -156,12 +156,12 @@ export default function Home() {
                     },
                     {
                       icon: <Scale className="w-6 h-6 text-blue-200" />,
-                      title: "Automated Settlements",
+                      title: "No Manual Settlements",
                       desc: "Forget about tracking who paid whom. Smart contracts handle the settlement logic automatically."
                     },
                     {
                       icon: <Shield className="w-6 h-6 text-green-200" />,
-                      title: "Transparent Transactions",
+                      title: "Verifiable Ledger",
                       desc: "Every transaction is recorded on a transparent, immutable ledger. Trust, but verify."
                     }
                   ].map((feature, i) => (

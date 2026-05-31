@@ -151,17 +151,17 @@ export default function Home() {
                   {[
                     {
                       icon: <Zap className="w-6 h-6 text-yellow-200" />,
-                      title: "Instant Settlements",
+                      title: "Automatic Net-off",
                       desc: "Simplify debts across multiple groups instantly. Our algorithm finds the most efficient path to settle balances."
                     },
                     {
                       icon: <Scale className="w-6 h-6 text-blue-200" />,
-                      title: "Automated Settlements",
+                      title: "No Manual Settlements",
                       desc: "Forget about tracking who paid whom. Smart contracts handle the settlement logic automatically."
                     },
                     {
                       icon: <Shield className="w-6 h-6 text-green-200" />,
-                      title: "Transparent Transactions",
+                      title: "Verifiable Ledger",
                       desc: "Every transaction is recorded on a transparent, immutable ledger. Trust, but verify."
                     }
                   ].map((feature, i) => (
