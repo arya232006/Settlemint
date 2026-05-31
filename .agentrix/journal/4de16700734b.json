@@ -1,0 +1,13 @@
+{
+  "id": "4de16700734b",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/4de16700734b/blobs/181556f1367041879bed1e46a7e0017f-page.tsx",
+      "after_preview": "<p className=\"text-sm md:text-base text-gray-400 max-w-2xl mx-auto font-light leading-relaxed\">\n                      Experience seamless expense sharing with S",
+      "ts": 1780232798309
+    }
+  ]
+}

@@ -113,8 +113,8 @@ export default function Home() {
                       Settlemint
                     </h1>
                     <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
-                      Experience seamless expense sharing with Settlemint. <br/>
-                      <span className="text-gray-500">Empowered by Blockchain for secure transactions.</span>
+                      The next generation of expense sharing. <br/>
+                      <span className="text-gray-500">Powered by Blockchain Settlement.</span>
                     </p>
                   </div>
                   
