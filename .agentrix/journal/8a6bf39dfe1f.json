@@ -1,0 +1,20 @@
+{
+  "id": "8a6bf39dfe1f",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/8a6bf39dfe1f/blobs/164f418d9f464492a25d3821610ce06e-page.tsx",
+      "after_preview": "<h1 className=\"text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-text-",
+      "ts": 1780233954499
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/8a6bf39dfe1f/blobs/17a30390ffcb4083a68880c087f8a17a-page.tsx",
+      "after_preview": "<p className=\"text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed\">",
+      "ts": 1780233983246
+    }
+  ]
+}
