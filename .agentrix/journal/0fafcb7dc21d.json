@@ -1,0 +1,20 @@
+{
+  "id": "0fafcb7dc21d",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "create",
+      "path": "tests/test_file_creation.py",
+      "before_blob_path": null,
+      "after_preview": "def test_file_creation():\n    with open('hfhfhfhfhfhfyyfyfy.d', 'r') as f:\n        content = f.read()\n    assert content == 'hello'\n",
+      "ts": 1780211862564
+    },
+    {
+      "kind": "create",
+      "path": "tests/test_file_creation.js",
+      "before_blob_path": null,
+      "after_preview": "const fs = require('fs');\n\ntest('file creation and content', () => {\n    const data = fs.readFileSync('hfhfhfhfhfhfyyfyfy.d', 'utf8');\n    expect(data).toBe('he",
+      "ts": 1780211869850
+    }
+  ]
+}
