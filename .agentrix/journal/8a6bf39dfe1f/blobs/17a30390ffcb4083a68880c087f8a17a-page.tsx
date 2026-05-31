@@ -112,7 +112,7 @@ export default function Home() {
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-text-shimmer tracking-tighter drop-shadow-sm">
                       Settlemint
                     </h1>
-                    <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                       The next generation of expense sharing. <br/>
                       <span className="text-gray-500">Powered by Blockchain Settlement.</span>
                     </p>
