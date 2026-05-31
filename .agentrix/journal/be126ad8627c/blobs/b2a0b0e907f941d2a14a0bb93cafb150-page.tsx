@@ -62,7 +62,7 @@ export default function Home() {
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => setShowLogin(false)}>
-              <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <div className="w-4 h-4 bg-black rounded-sm" />
               </div>
               <span className="font-bold text-xl tracking-tight">Settlemint</span>
@@ -70,10 +70,10 @@ export default function Home() {
             
             {user ? (
               <div className="flex items-center gap-4">
-                <span className="text-sm text-gray-300 hidden md:block">{user.email}</span>
+                <span className="text-sm text-gray-400 hidden md:block">{user.email}</span>
                 <button
                   onClick={handleLogout}
-                  className="bg-gradient-to-r from-green-400 to-blue-500/10 hover:bg-gradient-to-r from-green-400 to-blue-500/20 text-white px-4 py-2 rounded-full text-sm transition-colors border border-white/5"
+                  className="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-full text-sm transition-colors border border-white/5"
                 >
                   Logout
                 </button>
@@ -84,7 +84,7 @@ export default function Home() {
                   setShowLogin(true)
                   window.scrollTo({ top: 0, behavior: 'smooth' })
                 }}
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+                className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
               >
                 Sign In
               </button>
@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="w-full max-w-md animate-in fade-in zoom-in duration-300">
                   <button 
                     onClick={() => setShowLogin(false)}
-                    className="mb-4 text-sm text-gray-300 hover:text-white flex items-center gap-2"
+                    className="mb-4 text-sm text-gray-400 hover:text-white flex items-center gap-2"
                   >
                     ← Back
                   </button>
@@ -121,7 +121,7 @@ export default function Home() {
                   <div className="pt-8 flex flex-col items-center gap-12">
                     <button 
                       onClick={() => setShowLogin(true)}
-                      className="group relative bg-gradient-to-r from-green-400 to-blue-500 text-black px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2 overflow-hidden"
+                      className="group relative bg-white text-black px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2 overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
                       <span className="relative z-10 flex items-center gap-2">
@@ -167,15 +167,15 @@ export default function Home() {
                   ].map((feature, i) => (
                     <div 
                       key={i}
-                      className="group p-6 rounded-2xl border border-white/10 bg-gradient-to-r from-green-400 to-blue-500/5 backdrop-blur-sm hover:bg-gradient-to-r from-green-400 to-blue-500/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)]"
+                      className="group p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)]"
                     >
-                      <div className="bg-gradient-to-r from-green-400 to-blue-500/5 w-12 h-12 flex items-center justify-center rounded-xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-r from-green-400 to-blue-500/10 transition-all duration-300 border border-white/5">
+                      <div className="bg-white/5 w-12 h-12 flex items-center justify-center rounded-xl mb-6 group-hover:scale-110 group-hover:bg-white/10 transition-all duration-300 border border-white/5">
                         {feature.icon}
                       </div>
                       <h3 className="text-lg font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all">
                         {feature.title}
                       </h3>
-                      <p className="text-sm text-gray-300 leading-relaxed group-hover:text-gray-300 transition-colors">
+                      <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
                         {feature.desc}
                       </p>
                     </div>
@@ -218,7 +218,7 @@ export default function Home() {
                           <span className="text-2xl font-bold text-white">{item.step}</span>
                         </div>
                         <h3 className="text-xl font-bold mb-4 text-white">{item.title}</h3>
-                        <p className="text-sm text-gray-300 leading-relaxed max-w-xs">
+                        <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
                           {item.desc}
                         </p>
                       </div>
@@ -229,7 +229,7 @@ export default function Home() {
 
               {/* Testimonials Section */}
               <section className="py-32 px-4 relative overflow-hidden">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-green-400 to-blue-500/5 rounded-full blur-[100px] -z-10" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] -z-10" />
                 <div className="max-w-6xl mx-auto">
                   <h2 className="text-2xl md:text-4xl font-bold mb-16 text-center text-white">
                     Trusted by early adopters
@@ -252,7 +252,7 @@ export default function Home() {
                         role: "Software Engineer"
                       }
                     ].map((testimonial, i) => (
-                      <div key={i} className="p-8 rounded-2xl bg-gradient-to-r from-green-400 to-blue-500/5 border border-white/10 backdrop-blur-sm relative group hover:bg-gradient-to-r from-green-400 to-blue-500/10 transition-colors">
+                      <div key={i} className="p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm relative group hover:bg-white/10 transition-colors">
                         <Quote className="w-8 h-8 text-gray-600 mb-6 group-hover:text-white transition-colors" />
                         <p className="text-gray-300 mb-6 leading-relaxed">"{testimonial.quote}"</p>
                         <div>
@@ -271,7 +271,7 @@ export default function Home() {
                   <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white">
                     Ready to settle up?
                   </h2>
-                  <p className="text-gray-300 text-lg max-w-xl mx-auto">
+                  <p className="text-gray-400 text-lg max-w-xl mx-auto">
                     Join thousands of users who are experiencing the future of expense sharing today.
                   </p>
                   <button 
@@ -279,7 +279,7 @@ export default function Home() {
                       setShowLogin(true)
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }}
-                    className="bg-gradient-to-r from-green-400 to-blue-500 text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]"
+                    className="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]"
                   >
                     Start for Free
                   </button>
