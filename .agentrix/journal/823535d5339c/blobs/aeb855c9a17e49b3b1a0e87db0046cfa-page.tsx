@@ -107,7 +107,7 @@ export default function Home() {
                   <Auth />
                 </div>
               ) : (
-                <div className="text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards transition-transform transform hover:scale-105">
+                <div className="text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards">
                   <div className="space-y-4">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 animate-text-shimmer tracking-tighter drop-shadow-sm">
                       Settlemint

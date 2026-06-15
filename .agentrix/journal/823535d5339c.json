@@ -1,0 +1,13 @@
+{
+  "id": "823535d5339c",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/823535d5339c/blobs/aeb855c9a17e49b3b1a0e87db0046cfa-page.tsx",
+      "after_preview": "<div className=\"text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 fill-mode-forwards transition-transform transform hover:scale-105\"",
+      "ts": 1781512870147
+    }
+  ]
+}
