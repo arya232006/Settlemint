@@ -54,7 +54,7 @@ export default function Auth() {
   }
 
   return (
-    <div className="flex flex-col gap-4 p-6 max-w-sm mx-auto mt-10 bg-gradient-to-br from-blue-500 to-purple-500 border border-zinc-800 rounded-xl backdrop-blur-sm shadow-lg transition-transform transform hover:scale-105">
+    <div className="flex flex-col gap-4 p-6 max-w-sm mx-auto mt-10 bg-zinc-900/50 border border-zinc-800 rounded-xl backdrop-blur-sm">
       <h2 className="text-xl font-bold text-white text-center mb-2">Welcome Back</h2>
       
       <button

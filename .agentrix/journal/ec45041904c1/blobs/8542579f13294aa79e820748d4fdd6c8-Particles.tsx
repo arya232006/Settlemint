@@ -110,5 +110,5 @@ export default function Particles({
     }
   }, [particleCount, particleColor, speed, minSize, maxSize])
 
-  return <canvas ref={canvasRef} className={`${className} rounded-lg shadow-lg`} />
+  return <canvas ref={canvasRef} className={className} />
 }

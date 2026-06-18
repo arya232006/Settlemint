@@ -136,7 +136,7 @@ export default function Dashboard({ user }: { user: User }) {
   }
 
   return (
-    <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg p-4">
+    <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
       <div className="flex justify-between items-center mb-12">
         <div>
           <h1 className="text-4xl font-bold text-white mb-2">Dashboard</h1>
