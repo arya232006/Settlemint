@@ -158,15 +158,6 @@ export default function Dashboard({ user }: { user: User }) {
         </button>
       </div>
       
-      <div className="flex justify-between items-center mb-12">
-          <Wallet className="w-5 h-5" />
-          {walletAddress 
-            ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
-            : 'Connect Wallet'
-          }
-        </button>
-      </div>
-      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Create Group Card */}
         <div className="p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 backdrop-blur-sm">
