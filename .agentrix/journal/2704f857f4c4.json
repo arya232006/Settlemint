@@ -1,0 +1,13 @@
+{
+  "id": "2704f857f4c4",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "src/pages/terms-and-conditions.js",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/2704f857f4c4/blobs/145929f424b24a48bb184a17681dbe54-terms-and-conditions.js",
+      "after_preview": "<div className=\"container mx-auto p-4\" style={{ overflowY: 'auto', height: '100vh' }}>",
+      "ts": 1781766209931
+    }
+  ]
+}
