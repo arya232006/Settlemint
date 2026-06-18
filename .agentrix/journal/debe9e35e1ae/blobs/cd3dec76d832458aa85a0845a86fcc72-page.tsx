@@ -67,7 +67,6 @@ export default function Home() {
               </div>
               <span className="font-bold text-xl tracking-tight">Settlemint</span>
             </div>
-            <style jsx>{`#navbar { transition: transform 0.5s ease; }`}</style>
             
             {user ? (
               <div className="flex items-center gap-4">
@@ -300,8 +299,8 @@ export default function Home() {
             )}
           </div>
         ) : (
-          <div className="min-h-screen p-4 md:p-24 pt-24" id="dashboard-container">
-            <Dashboard user={user} onScroll={handleScroll} />
+          <div className="min-h-screen p-4 md:p-24 pt-24">
+            <Dashboard user={user} />
           </div>
         )}
       </div>

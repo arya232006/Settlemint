@@ -60,14 +60,13 @@ export default function Home() {
       <div className="relative z-10">
         {/* Navbar */}
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-md" id="navbar">
-          <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between" style={{ transition: 'all 0.5s ease' }}>
+          <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => setShowLogin(false)}>
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <div className="w-4 h-4 bg-black rounded-sm" />
               </div>
               <span className="font-bold text-xl tracking-tight">Settlemint</span>
             </div>
-            <style jsx>{`#navbar { transition: transform 0.5s ease; }`}</style>
             
             {user ? (
               <div className="flex items-center gap-4">
@@ -300,8 +299,8 @@ export default function Home() {
             )}
           </div>
         ) : (
-          <div className="min-h-screen p-4 md:p-24 pt-24" id="dashboard-container">
-            <Dashboard user={user} onScroll={handleScroll} />
+          <div className="min-h-screen p-4 md:p-24 pt-24">
+            <Dashboard user={user} />
           </div>
         )}
       </div>

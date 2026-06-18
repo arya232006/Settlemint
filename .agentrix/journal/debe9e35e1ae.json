@@ -1,0 +1,69 @@
+{
+  "id": "debe9e35e1ae",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/05132c0af9304fbcab59764c7d643caf-page.tsx",
+      "after_preview": "<div className=\"flex flex-col\" id=\"dashboard\">",
+      "ts": 1781765523233
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/4b8cebaa57384d4c934515dea4f3e677-page.tsx",
+      "after_preview": "<section className=\"min-h-screen flex flex-col items-center justify-center p-4\" style={{ transition: 'height 0.5s ease' }}>",
+      "ts": 1781765532845
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/2c2b38786771444c8906c883c66b6db9-page.tsx",
+      "after_preview": "<div className=\"max-w-3xl mx-auto space-y-8\" id=\"cta-section\">",
+      "ts": 1781765539859
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/03baff9c2af14098b65945c3486da341-page.tsx",
+      "after_preview": "<footer className=\"w-full border-t border-white/10 bg-black/40 backdrop-blur-md py-8\" id=\"footer\">",
+      "ts": 1781765547600
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/6a50812a6816481fb328b1420c8e9c6a-page.tsx",
+      "after_preview": "<nav className=\"fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-md\" id=\"navbar\">",
+      "ts": 1781765564559
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/b5f85b6a500e46f58ce5c6b979c5445e-page.tsx",
+      "after_preview": "<div className=\"max-w-7xl mx-auto px-6 h-16 flex items-center justify-between\" style={{ transition: 'all 0.5s ease' }}>",
+      "ts": 1781765568100
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/cd3dec76d832458aa85a0845a86fcc72-page.tsx",
+      "after_preview": "<div className=\"flex items-center gap-2 cursor-pointer\" onClick={() => setShowLogin(false)}>\n              <div className=\"w-8 h-8 bg-white rounded-lg flex item",
+      "ts": 1781765574479
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/6519a079b9e749069de4035364bcfac5-page.tsx",
+      "after_preview": "<div className=\"min-h-screen p-4 md:p-24 pt-24\" id=\"dashboard-container\">",
+      "ts": 1781765615651
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/page.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/debe9e35e1ae/blobs/2c23f45dbc33436486afc6bca880740f-page.tsx",
+      "after_preview": "<Dashboard user={user} onScroll={handleScroll} />",
+      "ts": 1781765620816
+    }
+  ]
+}
