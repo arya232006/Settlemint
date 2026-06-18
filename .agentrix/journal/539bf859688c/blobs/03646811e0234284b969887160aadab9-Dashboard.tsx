@@ -35,8 +35,7 @@ const handleScroll = () => {
 useEffect(() => {
   let lastScrollY = window.scrollY;
   window.addEventListener('scroll', handleScroll);
-  return (
-    <div className={`transition-all duration-500 ${isVisible ? 'scale-x-100' : 'scale-x-0'} overflow-hidden`}>) => window.removeEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
 }, []);
 
 const loadData = async () => {
@@ -118,7 +117,6 @@ const loadData = async () => {
 
   if (needsRegistration) {
     return (
-    <div className={`transition-all duration-500 ${isVisible ? 'scale-x-100' : 'scale-x-0'} overflow-hidden`}>
       <div className="max-w-md mx-auto mt-20 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
         <h2 className="text-2xl font-bold mb-4 text-white">Complete Registration</h2>
         <p className="mb-6 text-gray-400">Please set your display name to continue.</p>
@@ -141,7 +139,6 @@ const loadData = async () => {
 
   if (selectedGroupId) {
     return (
-    <div className={`transition-all duration-500 ${isVisible ? 'scale-x-100' : 'scale-x-0'} overflow-hidden`}>
       <div className="max-w-6xl mx-auto">
         <GroupDetails 
           groupId={selectedGroupId} 
@@ -153,7 +150,6 @@ const loadData = async () => {
   }
 
   return (
-    <div className={`transition-all duration-500 ${isVisible ? 'scale-x-100' : 'scale-x-0'} overflow-hidden`}>
     <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
       <div className="flex justify-between items-center mb-12">
         <div>

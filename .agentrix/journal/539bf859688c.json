@@ -1,0 +1,34 @@
+{
+  "id": "539bf859688c",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/components/Dashboard.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/539bf859688c/blobs/5c364d97f5ae412ca9ae025b03684f0d-Dashboard.tsx",
+      "after_preview": "import { useEffect, useState, useRef } from 'react'",
+      "ts": 1781765629329
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/components/Dashboard.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/539bf859688c/blobs/5d3befd97d0f420faecae44b967f630f-Dashboard.tsx",
+      "after_preview": "const [isVisible, setIsVisible] = useState(true);\n\nconst handleScroll = () => {\n  const currentScrollY = window.scrollY;\n  setIsVisible(currentScrollY < 100 || ",
+      "ts": 1781765635223
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/components/Dashboard.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/539bf859688c/blobs/03646811e0234284b969887160aadab9-Dashboard.tsx",
+      "after_preview": "return (\n    <div className={`transition-all duration-500 ${isVisible ? 'scale-x-100' : 'scale-x-0'} overflow-hidden`}>",
+      "ts": 1781765657418
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/app/globals.css",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/539bf859688c/blobs/90429f7f14244043b03c2a16208b8f7e-globals.css",
+      "after_preview": "background: transparent !important;\n\n.dashboard {\n  transition: transform 0.5s ease;\n}",
+      "ts": 1781765661400
+    }
+  ]
+}

@@ -301,7 +301,7 @@ export default function Home() {
           </div>
         ) : (
           <div className="min-h-screen p-4 md:p-24 pt-24" id="dashboard-container">
-            <Dashboard user={user} onScroll={handleScroll} />
+            <Dashboard user={user} />
           </div>
         )}
       </div>
