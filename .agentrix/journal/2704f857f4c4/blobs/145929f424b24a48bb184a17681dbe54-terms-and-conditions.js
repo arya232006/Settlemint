@@ -2,7 +2,7 @@ import React from 'react';
 
 const TermsAndConditions = () => {
     return (
-        <div className="container mx-auto p-4" style={{ overflowY: 'auto', height: '100vh' }}>
+        <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4">Terms and Conditions</h1>
             <p>Welcome to Settlemint! These terms and conditions outline the rules and regulations for the use of Settlemint's services.</p>
             <h2 className="text-xl font-semibold mt-4">1. Acceptance of Terms</h2>
