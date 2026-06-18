@@ -138,7 +138,7 @@ export default function GroupDetails({ groupId, currentUser, onBack }: GroupDeta
   if (!group) return <div className="text-white">Group not found</div>
 
   return (
-    <div className="animate-in fade-in slide-in-from-right duration-500 bg-gradient-to-l from-purple-500 to-pink-500 rounded-lg shadow-lg p-4">
+    <div className="animate-in fade-in slide-in-from-right duration-500">
       <button 
         onClick={onBack}
         className="mb-6 flex items-center gap-2 text-gray-400 hover:text-white transition-colors"

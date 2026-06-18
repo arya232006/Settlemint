@@ -1,0 +1,41 @@
+{
+  "id": "ec45041904c1",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/components/Auth.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/ec45041904c1/blobs/ca60138dc3ca46be8098d2160a80da3d-Auth.tsx",
+      "after_preview": "<div className=\"flex flex-col gap-4 p-6 max-w-sm mx-auto mt-10 bg-gradient-to-br from-blue-500 to-purple-500 border border-zinc-800 rounded-xl backdrop-blur-sm ",
+      "ts": 1781765032913
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/components/Dashboard.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/ec45041904c1/blobs/3cf4eb23fa284c799f9e6d3653aae693-Dashboard.tsx",
+      "after_preview": "<div className=\"max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg p-4\">",
+      "ts": 1781765037252
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/components/GroupDetails.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/ec45041904c1/blobs/df3e4746bb79411e9ba0784514edd5fe-GroupDetails.tsx",
+      "after_preview": "<div className=\"animate-in fade-in slide-in-from-right duration-500 bg-gradient-to-l from-purple-500 to-pink-500 rounded-lg shadow-lg p-4\">",
+      "ts": 1781765039850
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/components/Particles.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/ec45041904c1/blobs/8542579f13294aa79e820748d4fdd6c8-Particles.tsx",
+      "after_preview": "<canvas ref={canvasRef} className={`${className} rounded-lg shadow-lg`} />",
+      "ts": 1781765041700
+    },
+    {
+      "kind": "edit",
+      "path": "frontend/components/ParticlesBackground.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/ec45041904c1/blobs/8401a2ca518a45998c0d57904cf71829-ParticlesBackground.tsx",
+      "after_preview": "backgroundColor: 'rgba(0, 0, 0, 0.5)',",
+      "ts": 1781765043159
+    }
+  ]
+}

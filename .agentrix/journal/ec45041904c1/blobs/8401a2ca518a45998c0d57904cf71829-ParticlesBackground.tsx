@@ -8,7 +8,7 @@ export default function ParticlesBackground() {
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'red',
         zIndex: -10,
       }}
     />
