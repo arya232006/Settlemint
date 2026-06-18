@@ -1,0 +1,13 @@
+{
+  "id": "13187cbe8c9b",
+  "workspace": "/data/workspaces/arya232006/Settlemint",
+  "ops": [
+    {
+      "kind": "edit",
+      "path": "frontend/components/Dashboard.tsx",
+      "before_blob_path": "/data/workspaces/arya232006/Settlemint/.agentrix/journal/13187cbe8c9b/blobs/e58a50fe57c24d0ea0abbb4237b98863-Dashboard.tsx",
+      "after_preview": "</div>\n    )\n  }\n\n  if (selectedGroupId) {\n    return (\n      <div className=\"max-w-6xl mx-auto\">\n        <GroupDetails \n          groupId={selectedGroupId} \n  ",
+      "ts": 1781766960394
+    }
+  ]
+}
