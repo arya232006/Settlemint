@@ -18,7 +18,7 @@ export default function Auth() {
     })
 
     if (error) {
-      alert(error.message)
+      console.error(error.message)
     } else {
       // alert('Logged in!') // Removed alert to be less intrusive
     }
