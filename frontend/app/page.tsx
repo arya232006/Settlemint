@@ -28,6 +28,28 @@ export default function Home() {
     return () => subscription.unsubscribe()
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.navbar')
+      if (!navbar) return;
+      if (window.scrollY > 50) {
+        navbar.classList.add('shrink')
+      } else {
+        navbar.classList.remove('shrink')
+      }
+    }
+      const navbar = document.querySelector('.navbar');
+      if (!navbar) return
+      if (window.scrollY > 50) {
+        navbar.classList.add('shrink')
+      } else {
+        navbar.classList.remove('shrink')
+      }
+    }
+        window.addEventListener('scroll', handleScroll);;
+    return () => window.removeEventListener('scroll', handleScroll);;
+  }, [])
+
   const handleLogout = async () => {
     await supabase.auth.signOut()
   }
@@ -42,6 +64,17 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-black text-white selection:bg-green-500/30 overflow-hidden">
+      <style>
+        {` 
+          .navbar {
+            transition: all 0.3s ease;
+          }
+          .navbar.shrink {
+            transform: scaleX(0);
+            opacity: 0;
+          }
+        `}
+      </style>
       {/* Ambient Background Glow */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none z-0 animate-float" />
       <div className="fixed bottom-0 right-0 w-[800px] h-[600px] bg-purple-500/10 blur-[120px] rounded-full pointer-events-none z-0 animate-float-delayed" />
@@ -59,7 +92,7 @@ export default function Home() {
       
       <div className="relative z-10">
         {/* Navbar */}
-        <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-md">
+        <nav className="navbar fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => setShowLogin(false)}>
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
