@@ -15,8 +15,8 @@ class PaymentMethod(str, enum.Enum):
 
 class Payment(Base):
     id = Column(Integer, primary_key=True, index=True)
-    from_user_id = Column(Integer, ForeignKey("user.id"))
-    to_user_id = Column(Integer, ForeignKey("user.id"))
+    from_user_id = Column(Integer, ForeignKey("users.id"))
+    to_user_id = Column(Integer, ForeignKey("users.id"))
     amount = Column(Numeric(10, 2), nullable=False)
     status = Column(Enum(PaymentStatus), default=PaymentStatus.PENDING)
     method = Column(Enum(PaymentMethod), default=PaymentMethod.MANUAL)
