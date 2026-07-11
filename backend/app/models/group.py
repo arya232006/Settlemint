@@ -5,7 +5,7 @@ from app.db.base import Base
 group_members = Table(
     "group_members",
     Base.metadata,
-    Column("user_id", Integer, ForeignKey("user.id"), primary_key=True),
+    Column("user_id", Integer, ForeignKey("users.id"), primary_key=True)
     Column("group_id", Integer, ForeignKey("group.id"), primary_key=True),
 )
 
